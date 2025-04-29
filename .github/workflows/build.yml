@@ -9,7 +9,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        
       - name: Set up Bazel
         uses: bazel-contrib/setup-bazel@0.14.0
         with:
