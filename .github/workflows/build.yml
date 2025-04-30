@@ -34,4 +34,4 @@ jobs:
       - name: Build ZetaSQL
         shell: bash
         run: |
-          bazel build ...
+          bazel build ...  --verbose_failures
