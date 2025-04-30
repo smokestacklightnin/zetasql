@@ -34,4 +34,4 @@ jobs:
       - name: Build ZetaSQL
         shell: bash
         run: |
-          bazel build ...  --verbose_failures --discard_analysis_cache --notrack_incremental_state --nokeep_state_after_build --local_ram_resources=HOST_RAM*.90 --host_jvm_args=-Xmx2g
+          bazel --host_jvm_args=-Xmx2g build ...  --verbose_failures --discard_analysis_cache --notrack_incremental_state --nokeep_state_after_build --local_ram_resources=HOST_RAM*.90
