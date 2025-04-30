@@ -15,7 +15,7 @@ jobs:
         with:
           packages: ''
 
-      - run: sdkmanager "platform-tools" "platforms;android-33"
+      - run: sdkmanager "platform-tools" "platforms;android-32"
 
       - name: Set up Bazel
         uses: bazel-contrib/setup-bazel@0.14.0
