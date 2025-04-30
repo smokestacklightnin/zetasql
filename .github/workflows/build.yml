@@ -18,6 +18,12 @@ jobs:
       - name: Install Android API Level 32
         run: sdkmanager "platform-tools" "platforms;android-32"
 
+      - name: Install `libtinfo5`
+        run: |
+          sudo apt update
+          wget --content-disposition http://security.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2ubuntu0.1_amd64.deb
+          sudo apt install -y ./libtinfo5_6.3-2ubuntu0.1_amd64.deb
+
       - name: Set up Bazel
         uses: bazel-contrib/setup-bazel@0.14.0
         with:
