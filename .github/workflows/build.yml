@@ -46,4 +46,4 @@ jobs:
         shell: bash
         run: |
           bazel clean --expunge
-          bazel --host_jvm_args=-Xmx2g build ... --verbose_failures --discard_analysis_cache --notrack_incremental_state --nokeep_state_after_build --local_resources=memory=HOST_RAM*.90 --noremote_accept_cached --remote_upload_local_results=false --disk_cache='' --repository_cache='' --cache_computed_file_digests=0 --jobs=1
+          bazel --host_jvm_args=-Xmx2g build ... --verbose_failures --discard_analysis_cache --notrack_incremental_state --nokeep_state_after_build --local_resources=memory=HOST_RAM*.90 --noremote_accept_cached --remote_upload_local_results=false --disk_cache='' --repository_cache='' --cache_computed_file_digests=0 
